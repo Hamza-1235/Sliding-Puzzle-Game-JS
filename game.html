@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <h1>Sliding Tile Puzzle</h1>
+    <div id="container">
+        <div class="grid">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+    <div id="winPopup" class="modal" style="display: none">
+        <div class="modal-content">
+            <h2>You Win!</h2>
+            <p>Congratulations, you've solved the puzzle.</p>
+            <p>Time taken: <span id="winTime">00:00</span></p>
+            <p>Total Moves: <span id="winMove">0</span></p>
+        </div>
+    </div>
+    <div class="moves">Moves:
+        <span id="movenum">0</span>
+    </div>
+    <div class="timer">Timer: 
+        <span id="timecount">00:00</span>
+    </div>
+    <div id="startGameModal" class="modal">
+        <div class="modal-content"> 
+            <h2>WELCOME to the Puzzle Game</h2>
+            <p>Press the Start Game to Enjoy the Puzzle Game</p>
+            <button class="btn" id="modal-start-button">Start Game</button>
+        </div>
+    </div>
+</body>
+<script src="game.js"></script>
+
+</html>
